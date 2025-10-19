@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Sayangkuuu !</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffd6e8, #ffe6f0);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      color: #c71585;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5em;
+    }
+
+    .photo img {
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 90%;
+      height: auto;
+    }
+
+    .message {
+      margin: 30px auto;
+      max-width: 90%;
+      font-size: 1.2em;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+    .confetti {
+        display: none;
+    }
+
+    /* Galeri */
+    h2 {
+      margin-top: 50px;
+      font-size: 1.8em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto 50px auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- Efek Confetti -->
+  <div class="confetti"></div>
+
+  <h1>🎂 Happy Birthday ya Sayangkuuuuuu ! 🎉</h1>
+
+  <div class="message">
+    <p>
+      Sayangg, Happy Birthday ya 💖<br><br>
+      Semoga semua yang kamu harapin bisa tercapaii ya Sayangg<br>
+      aku bener bener bersyukur banget bisa pacaran sama kamu <br>
+      Semoga kita bisa sama sama terus ya sayangggg <br>
+      I LOVE YOU SAYANGGGGGGG <br><br>
+      Makasih ya udah hadir di hidup akuu
+    </p>
+  </div>
+
+  <div class="button">
+    <button onclick="alert('Aku Sayang Banget sama kamuu, Happy Birthday ya sayangkuu ❤️')">Pencet Sayanggggggg</button>
+  </div>
+
+  <!-- GALERI FOTO -->
+  <h2>Seru ya Waktu itu</h2>
+
+  <div class="gallery">
+    <!-- Ganti src berikut dengan link Google Drive (lihat catatan di bawah) -->
+    <img src="https://drive.google.com/thumbnail?id=1MHoE_ByxaUNxicd5vz9DVpbVU3LvOrdp&sz=w1000" alt="Foto 1">
+    <img src="https://drive.google.com/thumbnail?id=1_kdo0dw-uvkCCf6_LYjTBZvC6bZacCea&sz=w1000" alt="Foto 2">
+    <img src="https://drive.google.com/thumbnail?id=1egv75C_vwdyJQCZS8-KGG7__gPL36WQD&sz=w1000" alt="Foto 3">
+    <img src="https://drive.google.com/thumbnail?id=1GLe3QzkoZfE90lJtsfpzMyo-VZ59wthW&sz=w1000" alt="Foto 4">
+  </div>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  function launchConfetti() {
+    setInterval(() => {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#ffb6c1', '#ffc0cb', '#ff69b4', '#ff1493', '#db7093']
+      });
+    }, 2500); // repeat every 2.5s
+  }
+
+  // Start confetti when page loads
+  window.onload = launchConfetti;
+</script>
